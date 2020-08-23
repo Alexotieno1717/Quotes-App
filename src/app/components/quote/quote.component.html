@@ -1,1 +1,14 @@
-<p>quote works!</p>
+<div>
+    <h1>Quotes WebTech</h1>
+    <hr>
+    <ul>
+        <div *ngFor='let quote of quote; let i = index'>
+            <li>
+                <h2>{{quote.name}}</h2>
+                <p>{{quote.quoteMessage}}</p>
+                <button (click)='toggleDetails(i)'>Show More</button>
+                <app-quote-details *ngIf='quote.showDescription' [quote]= 'quote' (isComplete) = 'completeGoal($event,i)'></app-quote-details>
+            </li>
+        </div>
+    </ul>
+  </div>
