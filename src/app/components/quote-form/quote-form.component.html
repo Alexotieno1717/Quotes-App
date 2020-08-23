@@ -1,1 +1,19 @@
-<p>quote-form works!</p>
+<div class="container-fluid">
+    <h2 class="text-center">Add Quote</h2>
+    <hr>
+    <form #quoteForm='ngForm'>
+        <div class="font-group">
+            <label for="name">Name</label>
+            <input type="text" required class="form-control" [(ngModel)]="newQuote.name" id="name">
+            Display {{newQuote.name}}
+        </div>
+        <div class="form-group">
+            <label for="quoteTitile">Quote Title</label>
+            <input class="form-control" type="text" id="quoteTitile" required>
+        </div>
+        <div class="form-group">
+            <label for="quoteMessage">Quote Message</label>
+            <textarea class="form-control" type="text" id="quoteMessage" cols="30" rows="8" required></textarea>
+        </div>
+    </form>
+</div>

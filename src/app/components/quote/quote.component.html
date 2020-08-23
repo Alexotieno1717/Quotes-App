@@ -1,15 +1,22 @@
-<div>
+<div class="container">
     <h1>Quotes WebTech</h1>
     <hr>
-    <ul>
-        <div class="card" *ngFor='let quote of quote; let i = index'>
-            <li>
-                <h2>{{quote.quoteTitile}}</h2>
-                <p>{{quote.quoteMessage}}</p>
-                <p>Posted by ~ {{quote.name}}</p>
-                <button class="btn btn-info" (click)='toggleDetails(i)'>Show More</button>
-                <app-quote-details *ngIf='quote.showDescription' [quote]= 'quote' (isComplete) = 'completeGoal($event,i)'></app-quote-details>
-            </li>
+    <div class="row">
+        <div class="col-md-4">
+            <app-quote-form></app-quote-form>
         </div>
-    </ul>
-  </div>
+        <div class="col-md-8">
+            <ul>
+                <div class="card" *ngFor='let quote of quote; let i = index'>
+                    <li>
+                        <h2>{{quote.quoteTitile}}</h2>
+                        <p>{{quote.quoteMessage}}</p>
+                        <p>Posted by ~ {{quote.name}}</p>
+                        <button class="btn btn-info" (click)='toggleDetails(i)'>Show More</button>
+                        <app-quote-details *ngIf='quote.showDescription' [quote]= 'quote' (isComplete) = 'completeGoal($event,i)'></app-quote-details>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
