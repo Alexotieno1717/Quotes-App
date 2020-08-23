@@ -1,5 +1,12 @@
 # Quotes
 
+## Author
+[Alex Otieno](https://github.com/Alexotieno1717/)
+
+## Description
+This is agular cli application that displays quotes, allow the user to input new quote, upvote , downvote and delete the quote. 
+
+## Live Page
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
 ## Development server
@@ -25,3 +32,26 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Installation / Setup instruction
+* Open Terminal {Ctrl+Alt+T}
+* git clone https://github.com/Owiti-Charles/Quotes-app.git
+* cd Quotes-App
+* code . or atom . based on the text editor you have.
+
+## Technologies Used
+* HTML5
+* CSS
+* [AngulerCLI]
+* markdown
+* Bootstrap
+
+## Known Bugs
+* Some functionality did not work as expected
+
+## Contact Information
+If you have any question or contributions, please email me at alexotieno900@gmail.com
+
+## License
+* MIT License:  
+* Copyright &copy; 2020 | Alex Otieno
