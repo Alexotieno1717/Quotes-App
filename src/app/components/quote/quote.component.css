@@ -7,3 +7,15 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+#background{
+    background-color: black;
+    height: auto;
+    padding-bottom: 10px;
+}
+#background-img{
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.3)), url(../../../assets/q2.jpg);
+    background-position: center bottom;
+    height: auto;
+    padding-bottom: 4%;
+}

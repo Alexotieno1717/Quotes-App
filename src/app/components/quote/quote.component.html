@@ -1,19 +1,21 @@
-<div class="container">
-    <h1>Quotes WebTech</h1>
-    <hr>
-    <div class="row">
-        <div class="col-sm-3">
-            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-        </div>
-        <div class="col-sm-9">
-            <div class="cards d-flex">
-                <div class="card mt-2" *ngFor='let quote of quote; let i = index' style="width: 24rem;">
-                    <div class="card-body">
-                        <button id="show-more" class="btn btn-info" (click)='toggleDetails(i)'>Show More</button>
-                        <h2 class="card-title">{{quote.quoteTitile}}</h2>
-                        <p>{{quote.quoteMessage}}</p>
-                        <app-quote-details id="description" *ngIf='quote.showDescription' [quote]= 'quote' (isComplete) = 'completeGoal($event,i)'></app-quote-details>
-                        <p>Posted by ~ {{quote.name}}</p>
+<div class="container-fluid" id="background">
+    <div class="container" id="background-img">
+        <h1 class="text-center text-light">Quotes WebTech</h1>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+            </div>
+            <div class="col-sm-9">
+                <div class="cards d-flex">
+                    <div class="card mt-2" *ngFor='let quote of quote; let i = index' style="width: 24rem;">
+                        <div class="card-body">
+                            <button id="show-more" class="btn btn-info" (click)='toggleDetails(i)'>Show More</button>
+                            <h2 class="card-title">{{quote.quoteTitile}}</h2>
+                            <p>{{quote.quoteMessage}}</p>
+                            <app-quote-details id="description" *ngIf='quote.showDescription' [quote]= 'quote' (isComplete) = 'completeGoal($event,i)'></app-quote-details>
+                            <p>Posted by ~ {{quote.name}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
