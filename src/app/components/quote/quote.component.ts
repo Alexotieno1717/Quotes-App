@@ -16,8 +16,18 @@ export class QuoteComponent implements OnInit {
 
   completeGoal(isComplete, index){
     if (isComplete) {
-      this.quote.splice(index,1);
+      let toDelete = confirm(`Are you sure you want to delete ${this.quote[index].name}?`)
+
+      if (toDelete){
+        this.quote.splice(index,1)
+      }
     }
+  }
+
+  addNewQuote(quote){
+    let quoteLength = this.quote.length;
+    quote.id = quoteLength+1;
+    this.quote.push(quote);
   }
 
   toggleDetails(index){
