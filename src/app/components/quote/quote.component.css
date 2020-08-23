@@ -1,3 +1,9 @@
 #show-more{
     float: right;
+    margin: 10px;
+}
+
+.cards{
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
