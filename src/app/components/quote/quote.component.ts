@@ -9,9 +9,9 @@ import { Quotes } from '../../quotes';
 export class QuoteComponent implements OnInit {
 
   quote:Quotes[]=[
-    new Quotes(1, 'Alex Otieno', 'Web Hosting', 'Website of all kinds are posted on cloud to facilitate many to access'),
-    new Quotes(2, 'Alex', 'Tech and life', 'For a list of all the ways technology has failed to improve the quality of life, please press three'),
-    new Quotes(3, 'James', 'Technology', 'Technology… the knack of so arranging that we don’t have to experience it.'),
+    new Quotes(1, 'Alex Otieno', 'Web Hosting', 'Website of all kinds are posted on cloud to facilitate many to access', 0,0),
+    new Quotes(2, 'Alex', 'Tech and life', 'For a list of all the ways technology has failed to improve the quality of life, please press three', 0,0),
+    new Quotes(3, 'James', 'Technology', 'Technology… the knack of so arranging that we don’t have to experience it.',0,0),
   ]
 
   completeGoal(isComplete, index){
