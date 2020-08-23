@@ -8,14 +8,14 @@
         <div class="col-md-8">
             <ul>
                 <div class="card" *ngFor='let quote of quote; let i = index'>
-                    <li>
+                    <div>
                         <button id="show-more" class="btn btn-info" (click)='toggleDetails(i)'>Show More</button>
                         <h2>{{quote.quoteTitile}}</h2>
                         <p>{{quote.quoteMessage}}</p>
                         <p>Posted by ~ {{quote.name}}</p>
                         <!-- <button class="btn btn-info" (click)='toggleDetails(i)'>Show More</button> -->
                         <app-quote-details *ngIf='quote.showDescription' [quote]= 'quote' (isComplete) = 'completeGoal($event,i)'></app-quote-details>
-                    </li>
+                    </div>
                 </div>
             </ul>
         </div>
