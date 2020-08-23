@@ -1,0 +1,13 @@
+.name-title{
+    font-family: 'Gabriela', serif;
+}
+
+#form-cont{
+    background-color: rgba(0, 0, 0, .6);
+    padding: 10px;
+}
+
+.inputStyling{
+    background: transparent;
+    color: #ffffff;
+}
