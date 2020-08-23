@@ -2,11 +2,12 @@
     <h1>Quotes WebTech</h1>
     <hr>
     <ul>
-        <div *ngFor='let quote of quote; let i = index'>
+        <div class="card" *ngFor='let quote of quote; let i = index'>
             <li>
                 <h2>{{quote.quoteTitile}}</h2>
                 <p>{{quote.quoteMessage}}</p>
-                <button (click)='toggleDetails(i)'>Show More</button>
+                <p>Posted by ~ {{quote.name}}</p>
+                <button class="btn btn-info" (click)='toggleDetails(i)'>Show More</button>
                 <app-quote-details *ngIf='quote.showDescription' [quote]= 'quote' (isComplete) = 'completeGoal($event,i)'></app-quote-details>
             </li>
         </div>
