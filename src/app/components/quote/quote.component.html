@@ -11,7 +11,7 @@
                 <div class="cards d-flex">
                     <div class="card mt-2" *ngFor='let quote of quote; let i = index' style="width: 24rem;">
                         <div class="card-body">
-                            <button id="show-more" class="btn btn-info" (click)='toggleDetails(i)'>Show More</button>
+                            <button id="show-more" class="btn btn-sm btn-info" (click)='toggleDetails(i)'>Show More</button>
                             <h4 class="card-title">{{quote.quoteTitile}}</h4>
                             <p class="card-message">{{quote.quoteMessage}}</p>
                             <app-quote-details id="description" *ngIf='quote.showDescription' [quote]= 'quote' (isComplete) = 'completeGoal($event,i)'></app-quote-details>
